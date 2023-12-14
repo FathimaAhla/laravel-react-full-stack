@@ -17,6 +17,7 @@ export default function UserForm() {
         password_confirmation: ''
     })
 
+    // If an 'id' is provided (indicating an existing user), fetch user data
     if(id) {
         useEffect(() => {
             setLoading(true)
@@ -32,6 +33,7 @@ export default function UserForm() {
         }, [])
     }
 
+    // If user.id exists, it's an update; otherwise, it's a new user creation
     const onSubmit = (ev) => {
         ev.preventDefault();
         if (user.id) {
