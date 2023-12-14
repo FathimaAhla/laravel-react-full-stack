@@ -8,7 +8,7 @@ export default function UserForm() {
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false)
     const [errors, setErrors] = useState(null)
-    const {setNotification} = useStateContext
+    const {setNotification} = useStateContext()
     const [user, setUser] = useState({
         id: null,
         name: '',
