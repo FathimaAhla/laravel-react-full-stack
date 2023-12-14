@@ -74,7 +74,7 @@ export default function Users(){
                                     <td>{u.id}</td>
                                     <td>{u.name}</td>
                                     <td>{u.email}</td>
-                                    <td>{u.create_at}</td>
+                                    <td>{u.created_at}</td>
                                     <td>
                                         <Link className="btn-edit" to={'/users/'+u.id}>Edit</Link>
                                         &nbsp;
